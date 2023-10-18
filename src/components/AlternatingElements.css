@@ -1,0 +1,82 @@
+.ac-static {
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+.ac-dynamic {
+    margin-left: 1vw;
+    height: calc(4vw * 3 / 2);
+    line-height: calc(4vw * 3 / 2);
+    overflow: hidden;
+}
+
+.ac-dynamic li {
+    list-style: none;
+    font-size: 4vw;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 15s steps(1) infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: calc(-6vw * 1);
+        /* Enter number of elements here */
+    }
+
+    40% {
+        top: calc(-6vw * 2);
+    }
+
+    60% {
+        top: calc(-6vw * 3);
+    }
+
+    80% {
+        top: calc(-6vw * 4);
+    }
+
+    100% {
+        top: calc(-6vw * 5);
+    }
+}
+
+.ac-dynamic li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 6vw;
+}
+
+.ac-dynamic li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: var(--background-color);
+    border-left: 3px solid var(--secondary-color);
+    animation: typing 3s steps(10) infinite;
+}
+
+@media screen and (max-width: 899px) {
+    .ac-dynamic li span::after {
+        border-left: 1.5px solid var(--secondary-color);
+    }
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}

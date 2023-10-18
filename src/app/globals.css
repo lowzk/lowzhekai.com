@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --background-color: #1e1e1e;
+  --background-color-2: #343434;
+  --highlight-color: #bd7039;
+  --secondary-color: #f2e6d9;
+  --secondary-color-2: #c2c2c2;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Adjust width of the scrollbar */
+  background-color: var(--secondary-color-2); /* Color of the scrollbar track */
+}
+
+/* The draggable scrolling handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--highlight-color); /* Color of the thumb */
+  border-radius: 6px; /* Radius of the thumb */
+  border: 2px solid var(--secondary-color-2); /* Add border to the thumb, with the same color as the track */
+}
+
+.hover-glow {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-glow:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  transition: transform 0.2s ease-in-out;
+}
+
+.main-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vh;
+}
+
+.last-container {
+  padding-bottom: 10vh;
+}
+
+@media screen and (max-width: 899px) {
+  .main-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+  }
+  .last-container {
+    padding-bottom: 5vh;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .no-display-mobile {
+    display: none;
+  }
+}
+
+.gradient-to-grey {
+  background: linear-gradient(to bottom, var(--background-color), var(--background-color-2));
+}
+
+.grey-background {
+  background: var(--background-color-2)
+}
+
+.header {
+  font-size: clamp(1.2rem, 3.5vw, 4rem);
+  font-weight: 700;
+}
+
+.subheader {
+  font-size: clamp(0.6rem, 1.7vw, 1.8rem);
+  font-weight: 300;
+}

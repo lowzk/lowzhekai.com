@@ -1,0 +1,63 @@
+{
+    "description":"This file contains the content for the text portions of the site.",
+    "part_time":["software dev", "musician", "data analyst", "cs student", "barista"],
+    "notepad":"Hello world, my name is Zhe Kai! I'm a penultimate-year student majoring in Computer Science studying in the Renaissance Engineering Programme in NTU. I'm also an aspiring Software Engineer and I honestly just love to build cool things that make a difference in other's lives. Thanks for dropping by!",
+    "proficiencies": "These are some skills that I have gained from past internships, school, online courses and personal projects. Of course, learning never stops (especially in CS), so hopefully this list will continue to grow over time!",
+    "languages": [
+        "Python",
+        "Javascript",
+        "Typescript",
+        "SQL",
+        "HTML/CSS",
+        "Java",
+        "C/C++"
+      ],
+      "frontend": [
+        "Next.js",
+        "React.js",
+        "Tailwind",
+        "Material-UI",
+        "Bootstrap"
+      ],
+      "backend": [
+        "PostgreSQL",
+        "Firebase",
+        "Node.js",
+        "Express.js",
+        "FastAPI",
+        "Next.js",
+        "Postman"
+      ],
+      "data_analytics": [
+        "Langchain",
+        "OpenAI",
+        "scikit-learn",
+        "pandas",
+        "NumPy",
+        "Matplotlib",
+        "librosa",
+        "spacy",
+        "pytesseract"
+      ],
+      "devops": [
+        "Microsoft Azure",
+        "Docker",
+        "Vercel",
+        "Git",
+        "Github",
+        "Gitlab",
+        "Heroku"
+      ],
+      "others": [
+        "Statistics",
+        "English",
+        "Mandarin",
+        "Guitar",
+        "Piano",
+        "Drums",
+        "Singing",
+        "Barista",
+        "Badminton",
+        "Photography"
+      ]
+}

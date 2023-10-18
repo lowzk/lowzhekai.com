@@ -1,0 +1,67 @@
+#top-left-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 15vw;
+}
+
+#bottom-right-border {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15vw;
+    height: 15vw;
+}
+
+#top-right-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 25vw;
+}
+
+.profile-container {
+    padding: 6vw 10vw 6vw 10vw;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 899px) {
+    .profile-container {
+      padding: 2vw 5vw;
+      flex-direction: row;
+    }
+  }
+
+.profile-subheader {
+    font-size: clamp(1rem,2vw,3rem);
+    font-weight: 300;
+}
+
+.profile-name {
+    font-size: clamp(2rem,8vw,10rem);
+    font-weight: 600;
+    color: var(--highlight-color);
+}
+
+.profile-button {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-size: clamp(0.4rem,1vw,1rem);
+    display: 'inline-block';
+    padding: 0.5vw 1vw;
+    margin-right: 1vw;
+}
+
+#find-out-more {
+    background-color: transparent;
+    color: var(--secondary-color);
+    outline: var(--secondary-color) solid 0.2vw;
+}
+
+#find-out-more:hover {
+    background-color: var(--highlight-color);
+    color: var(--secondary-color-2);
+    outline: var(--secondary-color-2) solid 0.2vw;
+}

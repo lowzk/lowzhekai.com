@@ -1,0 +1,9 @@
+.fill-screen {
+    height: 80vh;
+}
+
+.contact-icon {
+    margin: 0px 10px 20px 10px;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+

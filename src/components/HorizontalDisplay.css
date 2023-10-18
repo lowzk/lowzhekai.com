@@ -1,0 +1,52 @@
+.slider-container {
+    position: relative;
+    width: 60vw;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider-image {
+    flex: 0 0 60vw;
+    padding: 1rem 2.5rem; /* Why uneven? */   
+    object-fit: contain;
+}
+.icon-style {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 899px) {
+    .slider-image {
+        flex: 0 0 90vw;
+        padding: 1rem 1.5rem;
+    }
+    .slider-container {
+        width: 100%;
+    }
+    .icon-style {
+        font-size: 1.5rem;
+    }
+}
+
+.slider-controls-left {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.slider-controls-right {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.slider-controls-left:hover,
+.slider-controls-right:hover {
+  color: var(--secondary-color-2);
+  transform: scale(1.05);
+}

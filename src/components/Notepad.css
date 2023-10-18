@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.notepad {
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 24px,
+            #272727 24px,
+            #272727 25px
+        );
+    line-height: 25px;
+    font-size: 25px;
+    padding: 20px 35px;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+.notepad-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 2);
+    background-color: antiquewhite;
+    transform: rotate(-1deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.notepad-container:hover {
+    transform: scale(1.1) rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.pin {
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 899px) {
+    .pin {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-container {
+        margin: 0 5vw;
+    }
+    .notepad {
+        background: 
+            repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 12px,
+                #272727 12px,
+                #272727 13px
+            );
+        line-height: 13px;
+        font-size: 10px;
+        padding: 13px 15px;
+    }
+}

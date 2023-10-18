@@ -1,0 +1,13 @@
+.MuiDrawer-paper {
+    background-color: var(--background-color-2);
+    color: var(--secondary-color);
+    width: 40vw;
+}
+
+.MuiListItemIcon-root{
+    color: var(--secondary-color);
+}
+
+.MuiListItem-root:hover {
+    background-color: var(--highlight-color);
+}
