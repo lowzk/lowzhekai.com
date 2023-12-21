@@ -19,11 +19,10 @@ export default function page() {
                 <a href="https://github.com/lowzk" target="_blank" rel="noreferrer">
                     <GitHubIcon className="contact-icon" />
                 </a>
-                <a href="mailto:lowzhekai69@gmail.com" target="_blank" rel="noreferrer">
+                <a href="mailto:lowzhekai.work@gmail.com" target="_blank" rel="noreferrer">
                     <AttachEmailIcon className="contact-icon" />
                 </a>
             </div>
             <ContactForm />
-
         </div>)
 }

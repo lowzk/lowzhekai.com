@@ -20,7 +20,7 @@ export default function Footer() {
                         <a href="https://github.com/lowzk" target="_blank" rel="noreferrer">
                             <GitHubIcon className="footer-icon"/>
                         </a>
-                        <a href="mailto:lowzhekai69@gmail.com" target="_blank" rel="noreferrer">
+                        <a href="mailto:lowzhekai.work@gmail.com" target="_blank" rel="noreferrer">
                             <AttachEmailIcon className="footer-icon"/>
                         </a>
                     </Grid>

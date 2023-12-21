@@ -12,12 +12,14 @@ function ContactForm() {
     const [nameError, setNameError] = useState<string>('');
     const [emailError, setEmailError] = useState<string>('');
     const [messageError, setMessageError] = useState<string>('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    
 
     const validateEmail = (email: string) => {
         const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         return re.test(email);
     };
-``
+
     const handleSubmit = async () => {
         if (!name) {
             setNameError('Please enter your name.');
@@ -36,6 +38,7 @@ function ContactForm() {
         } else {
             setMessageError('');
         }
+        setIsSubmitting(true);
         if (name && email && validateEmail(email) && message) {
             console.log("Name: " + name);
             console.log("Email: " + email);
@@ -52,6 +55,9 @@ function ContactForm() {
             setName('');
             setEmail('');
             setMessage('');
+            setIsSubmitting(false);
+        } else {
+            setIsSubmitting(false);
         }
     };
 
@@ -110,7 +116,7 @@ function ContactForm() {
                 error={!!messageError}
                 helperText={messageError}
             />
-            <Button variant="contained" className="contact-button" onClick={handleSubmit}>
+            <Button variant="contained" className="contact-button" onClick={handleSubmit} disabled={isSubmitting}>
                 Submit
             </Button>
         </div>

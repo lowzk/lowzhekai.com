@@ -30,7 +30,7 @@ export default function MenuDrawer() {
                         <ListItemIcon>
                             <PortraitIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Profile" />
+                        <ListItemText primary="Home" />
                     </ListItem>
                     <ListItem component="a" href="/portfolio">
                         <ListItemIcon>

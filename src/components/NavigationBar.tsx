@@ -50,7 +50,7 @@ export default function NavigationBar() {
                         <Grid item xs={1.5}>
                             <Link href="/" underline="none">
                                 <Button variant="contained" disableElevation endIcon={<PortraitIcon />}>
-                                    Profile
+                                    Home
                                 </Button>
                             </Link>
                         </Grid>) : null}

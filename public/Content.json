@@ -10,7 +10,8 @@
         "SQL",
         "HTML/CSS",
         "Java",
-        "C/C++"
+        "C/C++",
+        "Golang"
       ],
       "frontend": [
         "Next.js",
